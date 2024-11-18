@@ -5,7 +5,7 @@ import { Search, UserRound, Send, MessageCircle } from "lucide-react";
 import "../output.css";
 import "../index.css";
 
-const socket = io("http://localhost:5001", {
+const socket = io("http://localhost:5000", {
   withCredentials: true,
 });
 
