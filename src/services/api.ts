@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://urja-chat-app-backend-1v9fh2oub-salimehdis-projects.vercel.app/api";
+const API_BASE_URL = "https://urja-chat-app-backend-6qdok7533-salimehdis-projects.vercel.app/api";
 
 export const register = async (data: any) => {
   return axios.post(`${API_BASE_URL}/auth/register`, data);

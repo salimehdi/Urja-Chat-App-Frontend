@@ -5,7 +5,7 @@ import { Search, UserRound, Send, MessageCircle } from "lucide-react";
 import "../output.css";
 import "../index.css";
 
-const socket = io("https://urja-chat-app-backend-1v9fh2oub-salimehdis-projects.vercel.app", {
+const socket = io("https://urja-chat-app-backend-6qdok7533-salimehdis-projects.vercel.app", {
   withCredentials: true,
 });
 
@@ -41,7 +41,7 @@ export default function ChatApp() {
   useEffect(() => {
     const check = async()=>{
       try {
-        const response = await fetch('https://urja-chat-app-backend-1v9fh2oub-salimehdis-projects.vercel.app/api/isloggedin', {
+        const response = await fetch('https://urja-chat-app-backend-6qdok7533-salimehdis-projects.vercel.app/api/isloggedin', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ export default function ChatApp() {
     const fetchContacts = async () => {
       try {
         const { data, userDetails } = await fetch(
-          "https://urja-chat-app-backend-1v9fh2oub-salimehdis-projects.vercel.app/api/chats/all",
+          "https://urja-chat-app-backend-6qdok7533-salimehdis-projects.vercel.app/api/chats/all",
           {
             method: "GET",
             headers: {
@@ -226,7 +226,7 @@ export default function ChatApp() {
             return;
           }
           const response = await fetch(
-            `https://urja-chat-app-backend-1v9fh2oub-salimehdis-projects.vercel.app/api/messages/${thisChatCode.chatCode}`,
+            `https://urja-chat-app-backend-6qdok7533-salimehdis-projects.vercel.app/api/messages/${thisChatCode.chatCode}`,
             {
               method: "GET",
               headers: {

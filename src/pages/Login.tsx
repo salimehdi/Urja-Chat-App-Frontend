@@ -16,7 +16,7 @@ export default function Component() {
     setErrorMessage('');
 
     try {
-      const response = await fetch('https://urja-chat-app-backend-1v9fh2oub-salimehdis-projects.vercel.app/api/auth/login', {
+      const response = await fetch('https://urja-chat-app-backend-6qdok7533-salimehdis-projects.vercel.app/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
